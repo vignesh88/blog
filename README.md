@@ -1,2 +1,2 @@
 # blog
-files used in blog.vikki.in
+public - files used in blog.vikki.in
