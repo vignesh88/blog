@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #Author : Vignesh Ragupathy - me@vikki.in
 from datetime import datetime
 from pytz import timezone
@@ -16,7 +17,7 @@ def validate(date_text):
     try:
         datetime.datetime.strptime(date_text, '%Y-%m-%d %H:%M:%S')
     except ValueError:
-        print "Incorrect date time format, should be YYYY-MM-DD"
+        print "Incorrect date time format, should be YYYY-MM-DD HH:MM:SS"
         sys.exit(0)
             
 def convert_timezone(time_to_convert,country):
@@ -55,6 +56,7 @@ def extended():
         elif User_input1 in ['-m', '-M', 'm', 'M']:
             madrid()
         else:
+	    print "Invalid county"	
             sys.exit(0)
     else:
         sys.exit(0) 
