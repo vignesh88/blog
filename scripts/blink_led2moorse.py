@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 
-#####Moorse code ######
+#####Moorse code definition######
 CODE = {' ': ' ',
         "'": '.----.',
         '(': '-.--.-',
@@ -51,7 +51,7 @@ CODE = {' ': ' ',
         'Y': '-.--',
         'Z': '--..',
         '_': '..--.-'}
-######End of moorse code######
+######End of moorse code definition######
 
 # Set the pin designation type.
 # In this case, we use BCM- the GPIO number- rather than the pin number itself.
